@@ -528,7 +528,7 @@ package com.hurlant.math
 			}
 			ONE.dlShiftTo(ys,t);
 			t.subTo(y,y); // "negative" y so we can replace sub with am later.
-			while(y.t<ys) y.(y.t++, 0);
+			while(y.t < ys) y[y.t++] = 0;
 			while(--j >= 0) {
 				// Estimate quotient digit
 				var qd:int = (r.a[--i]==y0)?DM:Number(r.a[i])*d1+(Number(r.a[i-1])+e)*d2;
